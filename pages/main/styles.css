@@ -45,7 +45,7 @@ body {
 }
 
 .ajust i {
-    font-size: 32px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -116,7 +116,7 @@ body {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 80px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.1px solid grey;
 }
 
 .containerHeader h2 {
@@ -156,6 +156,10 @@ body {
     justify-content: center;
     border-radius: 20px;
     background-color: #fff;
+}
+
+.card:hover {
+    background-color: rgb(226, 226, 226);
 }
 
 .card h3 {
@@ -202,6 +206,133 @@ body {
 .outline i {
     font-size: 60px;
     color: #fff;
+}
+
+.ourTeam {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+}
+
+.teamHeader {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    border-bottom: 0.5px solid grey;
+}
+
+.teamHeader h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 80px;
+    font-weight: 300;
+}
+
+.teamSubtitle {
+    width: 80%;
+}
+
+.teamSubtitle p {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 200px;
+    color: #fff;
+}
+
+.teamBody {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.peoples {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 4px solid #fff;
+}
+
+.profilePic i {
+    font-size: 80px;
+    color: #fff;
+}
+
+.about {
+    width: 30vw;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+.lineBox {
+    width: 20vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lineBox h2{
+    color: #fff;
+    opacity: 0;
+    font-weight: 300;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.lineBox p {
+    color: #fff;
+    opacity: 0;
+    font-weight: 200;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.line {
+    width: 10vw;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.lineBox:hover .line {
+    width: 15vw;
+}
+
+.lineBox:hover h2 {
+    opacity: 1;
+    transform: translateY(-30px);
+}
+
+.lineBox:hover p {
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+.about:hover {
+    background-color: rgb(226, 226, 226);
 }
 
 /*Animations*/
@@ -262,6 +393,28 @@ body {
 
     .button {
         height: 60px;
+    }
+
+    .peoples {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .lineBox {
+        width: 50%;
+    }
+
+    .line {
+        width: 20vw;
+    }
+
+    .lineBox:hover .line {
+        width: 30vw;
     }
 }
 
