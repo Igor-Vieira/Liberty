@@ -52,9 +52,15 @@ body {
 .textBox h1{
     text-align: center;
     color: #fff;
+    margin-top: 0;
     margin-bottom: 100px;
+    line-height: 150px;
     font-size: 60px;
     font-family: Roboto;
+}
+
+.textBox p {
+    color: #fff;
 }
 
 .textBox{
@@ -62,34 +68,12 @@ body {
     flex-direction: column;
     border-radius: 20px;
     width: 90vw;
-    height: 60vh;
+    padding: 150px;
     justify-content: center;
     align-items: center;
     background-color: #3a3a3a;
     opacity: 0.9;
 }
-
-.button {
-    width: 60%;
-    color: #fff;
-    border-radius: 50px;
-    font-size: 24px;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    padding: 1%;
-    justify-content: center;
-    margin-bottom: 120px;
-    border: 1px solid #fff;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.button:hover {
-    color: #3a3a3a;
-    background-color: #fff;
-}
-
 
 .firstImage {
     background-image: url('../../images/background.jpg');
@@ -335,6 +319,36 @@ body {
     background-color: rgb(226, 226, 226);
 }
 
+.footer {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.socials {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials a {
+    list-style: none;
+}
+
+.socials a i {
+    color: #3a3a3a;
+    font-size: 34px;
+    transition: 0.4s;
+}
+
+.socials a i:hover {
+    color: grey;
+}
+
 /*Animations*/
 
 [data-animation] {
@@ -388,7 +402,12 @@ body {
     }
 
     .textBox h1{
-        font-size: 24px;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .textBox {
+        padding: 60px;
     }
 
     .button {
@@ -415,6 +434,14 @@ body {
 
     .lineBox:hover .line {
         width: 30vw;
+    }
+}
+
+@media (max-width: 1500px) {
+    .textBox h1 {
+        margin-top: 50px;
+        font-size: 53px;
+        line-height: normal;
     }
 }
 
